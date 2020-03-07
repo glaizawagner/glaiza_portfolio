@@ -14,13 +14,11 @@ const Nav = () => {
     return(
         <nav role="navigation">
             <div id="toggleMenu">
-                <div>
-                    <input type="checkbox" checked={toggleMenu} onChange={toggleMenuFunction} />
+                    <input type="checkbox" checked={toggleMenu} onChange={toggleMenuFunction}/>
                     {IconStyle({ style: `${toggleMenu ? 'close' : 'hamburger'}`})}
+                        <img src="https://imgur.com/5f1Kl3j.png" alt="logo" className="logo"/>
                     
-                    <img src="https://imgur.com/5f1Kl3j.png" alt="logo" className="logo"/>
-                </div>
-                <ul id="navMenu">
+                <ul id="navMenu" className="right">
                     <Link to="/" onClick={toggleMenuFunction} className="menu-link">
                         <li className={!window.location.href.includes('projects') && !window.location.href.includes('contact') ? 'active' : 'inactive'}>
                             Home
