@@ -31,13 +31,13 @@ function Projects() {
                                     <small className="card-text text-sm-center text-muted">{project.description}</small>
                                 </div>
                                 <div className="proj-btn">
-                                  <button className="btn btn-sm follow btn-primary">
+                                  <button className="btn btn-sm follow btn-primary glow-on-hover">
                                         <a href={`${project.liveApp}`} target="_blank" rel="noopener noreferrer">Live</a>
                                       </button>
-                                      <button className="btn btn-sm follow btn-primary">
+                                      <button className="btn btn-sm follow btn-primary glow-on-hover">
                                         <a href={`${project.clientRepo}`} target="_blank" rel="noopener noreferrer">Client</a>
                                       </button>
-                                      <button className="btn btn-sm follow btn-primary">
+                                      <button className="btn btn-sm follow btn-primary glow-on-hover">
                                         <a href={`${project.serverRepo}`} target="_blank" rel="noopener noreferrer">Server</a>
                                       </button>
                                   </div>
