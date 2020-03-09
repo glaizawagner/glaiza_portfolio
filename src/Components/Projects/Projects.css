@@ -66,6 +66,7 @@
     height: 100%;
     width: auto;
     overflow: hidden;
+    padding-top: 1rem;
 }
 
 /* .card-title{
@@ -81,7 +82,7 @@
 
 .container{
     background-color: lightpink;
-    padding: 0 4rem;
+    padding: 2rem 4rem;
 }
 img {
     display:block;
