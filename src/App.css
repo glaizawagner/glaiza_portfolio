@@ -1,3 +1,15 @@
+
+:root {
+  --color-primary-dark:rgba(36, 123, 160, 1);
+  --color-primary-medium: rgba(112, 193, 179, 1);
+  --color-primary-light: rgba(178, 219, 191, 1);
+
+  --color-dark: rgba(255, 22, 84, 1);
+  --color-medium: rgba(243, 255, 189, 1);
+  --font-light: rgba(255,255,255, 0.9);
+
+  }
+  
 *,
 *::after,
 *::before {
@@ -13,13 +25,23 @@ html {
 }
 
 body {
-    font-family: "Lato", sans-serif;
+  font-family: 'Libre Baskerville', serif;
     font-weight: 400;
     font-size: 1rem;
     line-height: 1.5;
     box-sizing: border-box;
+
+    color: var(--color-dark);
+  
+    height: 90vh;
+    width: auto;
+    background: linear-gradient(0deg,rgba(112, 193, 179, .3),var(--color-primary-dark));
+    overflow: hidden;
+    background-attachment: fixed;
+    text-align: center; 
 }
 
+/* Box Glow */
 .glow-on-hover {
   width: 220px;
   height: 50px;

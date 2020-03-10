@@ -34,12 +34,15 @@ const Nav = () => {
                             Projects
                         </li>
                     </Link>
-                    <Link to="/contact" onClick={toggleMenuFunction} className="menu-link">
+                    <Link to="/Resume" onClick={toggleMenuFunction} className="menu-link">
                         <li className={window.location.href.includes('projects') ? 'active' : 'inactive'}>
-                            Contact
+                            Resume
                         </li>
                     </Link>
                 </ul>
+                <div>
+                    
+                </div>
             </div>
         </nav>
     )

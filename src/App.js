@@ -27,7 +27,7 @@ function App() {
       <BrowserRouter>
         <div className="App">
           <Nav />
-          <main>
+          <main className="container">
             <Switch>
               <Route exact path={'/'} component={LandingPage} />
               <Route path={'/about'} component={About} />

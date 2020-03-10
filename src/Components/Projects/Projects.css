@@ -80,14 +80,16 @@
     margin-bottom: 0 !important;
 } */
 
-.container{
-    background-color: lightpink;
+/* .container{
+    /* background-color: lightpink; 
     padding: 2rem 4rem;
-}
+} */
+
 img {
     display:block;
     margin:auto;
 }
+
 .slick-prev:before, .slick-next:before {
     color: black !important;
 }
