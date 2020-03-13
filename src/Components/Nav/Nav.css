@@ -139,7 +139,7 @@
       /* border-radius: .3em; */
     }
   
-    ul li {
+    #navMenu li {
       position: relative;
       display: block;
       margin: 8px 0;
@@ -151,7 +151,7 @@
       color: var(--font-light) !important;
     }
 
-    ul li::before {
+    #navMenu li::before {
       content: '';
       position: absolute;
       top: 5px;
@@ -166,7 +166,7 @@
       transition: .3s;
     }
 
-    ul li::after {
+    #navMenu li::after {
       content: '';
       position: absolute;
       top: 2px;
@@ -180,16 +180,16 @@
       /* z-index: -1; */
     }
 
-    ul li:hover {
+    #navMenu li:hover {
       color: #fff;
     }
 
-    ul li:hover::before {
+    #navMenu li:hover::before {
       transform: scaleY(1);
       opacity: 1;
     }
     
-    ul li:hover::after {
+    #navMenu li:hover::after {
       transform: scaleY(1);
       opacity: 1;
     }

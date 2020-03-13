@@ -7,6 +7,7 @@ import Loading from './Components/Loading/Loading';
 import Nav from './Components/Nav/Nav';
 import Projects from './Components/Projects/Projects';
 import Footer from './Components/Footer/Footer';
+import resumeData from './resumeData'
 import './App.css';
 
 function App() {
@@ -29,9 +30,15 @@ function App() {
           <Nav />
           <main className="container">
             <Switch>
-              <Route exact path={'/'} component={LandingPage} />
-              <Route path={'/about'} component={About} />
-              <Route path={'/projects'} component={Projects} />
+              <Route exact path={'/'} 
+                render={ () => <LandingPage resumeData = {resumeData} />}
+              />
+              <Route path={'/about'} 
+                render={ () => <About resumeData = {resumeData}/>}
+              />
+              <Route path={'/projects'} 
+                render={ () => <Projects resumeData = {resumeData} />}
+              />
               <Route path={'/contact'} component={Contact} />
             </Switch>
           </main>

@@ -1,31 +1,30 @@
 import React, { Component } from 'react';
-// import IconStyle from '../IconStyle/IconStyle';
-import { SocialIcon } from 'react-social-icons'
 import './Landing.css';
 
 class Landing extends Component {
     render() {
+        let resumeData = this.props.resumeData;
+        console.log(resumeData.socialLinks)
         return(
             <div className="home">
                 <div>
                     <img src="https://imgur.com/jWipsfT.png" alt="headshot" className="headshot" /> 
-                    <div className="heading-primary">
-                    <h1>glaiza e. wagner</h1>
-                    </div>
-
-                    <div className="heading-secondary">
-                        <h2>full stack web developer</h2>
-                    </div>
-
-                    <p> HTML5/CSS3 | Bootstrap | Javascript | React | React Native | NodeJS | ExpressJS</p>
-
+                    
+                    <h1 className="heading-primary">{resumeData.name}</h1>
+                    <h2 className="heading-secondary">{resumeData.role}</h2>
+                    <p className="home-skills"> {resumeData.skills}</p>
                 </div>
                
-                <div className="social-links"> 
-                    <SocialIcon className ="social-icons" bgColor="blue" url="https://www.linkedin.com/in/glaizawagner" target="_blank" rel="noopener noreferrer" />
-                    <SocialIcon className ="social-icons" bgColor="black" url="https://github.com/glaizawagner" target="_blank" rel="noopener noreferrer"/>
-                    <SocialIcon className ="social-icons" bgColor="white" url="mailto:glaizawagner@gmail.com" rel="noopener noreferrer"/>
-                </div> 
+                <ul className="social-links"> 
+                    { resumeData.socialLinks.map(social => {
+                        return(
+                            <li key={social.id}>
+                                <a href={social.url} target="blank" rel="noopener noreferrer"><i className={social.className}></i></a>
+                            </li>
+                        )
+                    })}
+                </ul> 
+                
             </div>
  
         )

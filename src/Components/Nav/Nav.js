@@ -18,7 +18,7 @@ const Nav = () => {
                     {IconStyle({ style: `${toggleMenu ? 'close' : 'hamburger'}`})}
                         <img src="https://imgur.com/5f1Kl3j.png" alt="logo" className="logo"/>
                     
-                <ul id="navMenu" className="right">
+                <ul id="navMenu">
                     <Link to="/" onClick={toggleMenuFunction} className="menu-link">
                         <li className={!window.location.href.includes('projects') && !window.location.href.includes('contact') ? 'active' : 'inactive'}>
                             Home

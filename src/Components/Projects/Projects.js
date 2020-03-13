@@ -1,28 +1,32 @@
-import React from 'react';
+import React, { Component } from 'react';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import './Projects.css';
 import Slider from "react-slick";
-import ProjectList from './ProjectList'
+import NextArrow  from './NextArrow';
+import PrevArrow from './PrevArrow'
+import './Projects.css';
 
-function Projects() {
+class Projects extends Component {
+
+  render() {
+  let resumeData = this.props.resumeData;
   let settings = {
+    dots: true,
     infinite: false,
     speed: 1000,
     arrows:true,
     slidesToShow: 1,
     slidesToScroll: 1,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />
   }
       return (
         <div className="container">
             <h6 className="text-muted">PROJECTS</h6>
-            {ProjectList.length===0?(
-                <div className="spinner-border" role="status">
-                    <span className="sr-only">Loading...</span>
-                </div>
-            ):(
+              <div className="projects-box">
                 <Slider {...settings}>
-                {ProjectList.map(project=>(
+                {resumeData.projectList.map(project=>(
+                    
                         <div className="out" key={project.id}>
                             <div className="card">
                                 <img className="rounded-circle proj-images" alt={project.name} src={`${project.img}`} />
@@ -31,7 +35,7 @@ function Projects() {
                                     <small className="card-text text-sm-center text-muted">{project.description}</small>
                                 </div>
                                 <div className="proj-btn">
-                                  <button className="btn btn-sm follow btn-primary glow-on-hover">
+                                      <button className="btn btn-sm follow btn-primary glow-on-hover">
                                         <a href={`${project.liveApp}`} target="_blank" rel="noopener noreferrer">Live</a>
                                       </button>
                                       <button className="btn btn-sm follow btn-primary glow-on-hover">
@@ -42,12 +46,14 @@ function Projects() {
                                       </button>
                                   </div>
                             </div>
+                           
                         </div>
                     ))}
                 </Slider>
-            )}
+              </div>
         </div>
     );
+  }
 }
 
 export default Projects;

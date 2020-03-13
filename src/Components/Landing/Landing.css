@@ -3,11 +3,11 @@
     height: 20%;
     opacity: 0.8;
 }
-/* 
-i {
-    font-size: 1rem;
+
+a {
+    font-size: 2rem;
     color: var(--color-dark);
-} */
+} 
 
 .home {
   height: 75vh;
@@ -32,6 +32,11 @@ i {
 .social-icons {
   height: 5%;
   width: 5%;
+}
+
+.social-icons:hover:before {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px red;
 }
 
 .social-icons:hover {
