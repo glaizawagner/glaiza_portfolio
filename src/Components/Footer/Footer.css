@@ -11,4 +11,5 @@
     color: var(--font-light);
     background-image: linear-gradient(180deg, rgba(178, 219, 191, .5), rgba(36, 123, 160, .8));
     text-align: center;
+    z-index: 2;
 }

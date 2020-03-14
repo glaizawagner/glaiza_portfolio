@@ -8,6 +8,8 @@ import Nav from './Components/Nav/Nav';
 import Projects from './Components/Projects/Projects';
 import Footer from './Components/Footer/Footer';
 import resumeData from './resumeData'
+import Resume from './Components/Resume/Resume';
+
 import './App.css';
 
 function App() {
@@ -39,7 +41,7 @@ function App() {
               <Route path={'/projects'} 
                 render={ () => <Projects resumeData = {resumeData} />}
               />
-              <Route path={'/contact'} component={Contact} />
+              <Route path={'/resume'} component={Resume} />
             </Switch>
           </main>
         </div>

@@ -1,26 +1,63 @@
 const resumeData = {
     "name" : "Glaiza Wagner",
     "role" : "Full-Stack Web Developer",
-    "skills" : "HTML5 | CSS3 |  Javascript | React  | NodeJS | ExpressJS",
+    "contactTitle": "Contact",
+    "contactSign" : "fa fa-map-pin",
     "socialLinks" : 
     [
         {
             "id" : 1,
-            "name" : "linkedIn",
+            "name" : "LinkedIn",
             "url" : "https://www.linkedin.com/in/glaizawagner/",
             "className": "fa fa-linkedin",
         },
         {
             "id" : 2,
-            "name" : "gitHub",
+            "name" : "GitHub",
             "url" : "https://github.com/glaizawagner",
             "className":"fa fa-github"
         },
         {
             "id" : 3,
-            "name" : "twitter",
+            "name" : "Twitter",
             "url" : "https://twitter.com/GlaizaWagner",
             "className": "fa fa-twitter",
+        },
+        {
+            "id" : 4,
+            "name" : "Email",
+            "url" : "mailto:glaizawagner@gmail.com",
+            "className": "fa fa-envelope",
+        }
+    ],
+    "navResumeLink" : "https://drive.google.com/file/d/188nMXjIDNyqTr66sYmX4hhq61tdXuxrT/view?usp=sharing",
+    "navResumeIcon" : "fa fa-file",
+    "navLinks" : 
+    [
+        {
+            "id" : 1,
+            "to" : "/",
+            "name" : "Home",
+            "icons": "fa fa-home",
+        },
+        {
+            "id" : 2,
+            "to" : "/about",
+            "name" : "About",
+            "icons":"fa fa-user"
+        },
+        {
+            "id" : 3,
+            "name" : "Projects",
+            "to" : "/projects",
+            "icons": "fa fa-folder",
+        }
+        ,
+        {
+            "id" : 4,
+            "name" : "Resume",
+            "to" : "https://drive.google.com/file/d/188nMXjIDNyqTr66sYmX4hhq61tdXuxrT/view?usp=sharing",
+            "icons": "fa fa-file",
         }
     ],
     "about" : 
@@ -56,12 +93,12 @@ const resumeData = {
             "className" : "fa fa-caret-right"
         },
         {
-            "id" : 3 , 
+            "id" : 4 , 
             "desc" : "New experiences and adventures",
             "className" : "fa fa-caret-right"
         },
         {
-            "id" : 4 , 
+            "id" : 5 , 
             "desc" : "Baking/cooking when I have lots of extra time",
             "className" : "fa fa-caret-right"
         },
@@ -122,6 +159,65 @@ const resumeData = {
                 clientRepo: "https://github.com/glaizawagner/Jonny-Glaiza-QuizGame",
                 description: "A 10 question quiz that will test your knowledge in HTML, CSS and Javascript. When a user clicks submit, a random image and a message will show that the user's answer is correct or incorrect.",
             }
+    ],
+    "techStack" : 
+    [
+        {
+            "id": 1,
+            "skillName":"html5-plain-wordmark",
+            "symbol" : " | "
+          },
+          {
+            "id": 2,
+            "skillName":"css3-plain-wordmark",
+            "symbol" : " | "
+          },
+          {
+            "id": 3,
+            "skillName":"javascript-plain",
+            "symbol" : " | "
+          },
+          {
+            "id": 4,
+            "skillName":"react-original-wordmark",
+            "symbol" : " | "
+          },
+          {
+            "id": 5,
+            "skillName":"nodejs-plain-wordmark",
+            "symbol" : " | "
+          },
+          {
+            "id": 6,
+            "skillName":"express-original-wordmark",
+            "symbol" : " | "
+          },
+          {
+            "id": 7,
+            "skillName":"postgresql-plain-wordmark",
+            "symbol" : " | "
+          },
+          {
+            "id": 8,
+            "skillName":"git-plain-wordmark",
+            "symbol" : " | "
+          },
+          {
+            "id": 9,
+            "skillName":"heroku-original-wordmark",
+            "symbol" : " | "
+          },
+          {
+            "id": 10,
+            "skillName":"jquery-plain-wordmark",
+            "symbol" : " | "
+          },
+          {
+            "id": 11,
+            
+            "skillName":"sass-original",
+            "symbol" : " | "
+          },
     ]
 }
 export default resumeData;

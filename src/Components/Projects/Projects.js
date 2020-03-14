@@ -23,34 +23,39 @@ class Projects extends Component {
       return (
         <div className="container">
             <h6 className="text-muted">PROJECTS</h6>
-              <div className="projects-box">
+              <ul className="projects-box">
                 <Slider {...settings}>
                 {resumeData.projectList.map(project=>(
-                    
-                        <div className="out" key={project.id}>
-                            <div className="card">
-                                <img className="rounded-circle proj-images" alt={project.name} src={`${project.img}`} />
-                                <div className="card-body">
-                                    <h5 className="card-title">{project.name}</h5>
-                                    <small className="card-text text-sm-center text-muted">{project.description}</small>
-                                </div>
-                                <div className="proj-btn">
-                                      <button className="btn btn-sm follow btn-primary glow-on-hover">
-                                        <a href={`${project.liveApp}`} target="_blank" rel="noopener noreferrer">Live</a>
-                                      </button>
-                                      <button className="btn btn-sm follow btn-primary glow-on-hover">
-                                        <a href={`${project.clientRepo}`} target="_blank" rel="noopener noreferrer">Client</a>
-                                      </button>
-                                      <button className="btn btn-sm follow btn-primary glow-on-hover">
-                                        <a href={`${project.serverRepo}`} target="_blank" rel="noopener noreferrer">Server</a>
-                                      </button>
+                             <div className="card">
+                                  <div className = "proj-image">
+                                    <li className="out" key={project.id}><img className="rounded-circle proj-images" alt={project.name} src={`${project.img}`} /></li>
                                   </div>
+                                  <div className="proj-details">
+                                        <div>
+                                            <h5 className="card-title">{project.name}</h5>
+                                            <small className="card-text text-sm-center text-muted">{project.description}</small>
+                                        </div>
+                                        
+                                        <div className="proj-btn">
+                                          <button className="btn btn-border">
+                                            <a href={`${project.liveApp}`} target="_blank" rel="noopener noreferrer">Live</a>
+                                          </button>
+                                          <button className="btn btn-border">
+                                            <a href={`${project.clientRepo}`} target="_blank" rel="noopener noreferrer">Client</a>
+                                          </button>
+                                          <button className="btn btn-border">
+                                            <a href={`${project.serverRepo}`} target="_blank" rel="noopener noreferrer">Server</a>
+                                          </button>
+                                        </div>
+                                       
+                                  </div>
+                                
                             </div>
                            
-                        </div>
+                        
                     ))}
                 </Slider>
-              </div>
+              </ul>
         </div>
     );
   }

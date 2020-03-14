@@ -1,13 +1,9 @@
-import React, { useEffect, Component } from 'react';
+import React, { Component } from 'react';
 import './About.css';
 
-// const About = () => {
-
-//     useEffect(() => {
-//         window.scrollTo(0, 0);
-//     })
 
 class About extends Component {
+
     render() {
 
     let resumeData = this.props.resumeData;
