@@ -170,6 +170,7 @@
     opacity: 0;
     transition: .3s;
   }
+  
 
   #navMenu li::after {
     content: '';
