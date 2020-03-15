@@ -21,7 +21,7 @@ const Nav = () => {
           onChange={toggleMenuFunction}
         />
         {IconStyle({ style: `${toggleMenu ? "close" : "hamburger"}` })}
-        <img src="https://imgur.com/5f1Kl3j.png" alt="logo" className="logo" />
+        <img src={resumeData.logo} alt="logo" className="logo" />
         <ul id="navMenu">
           {resumeData.navLinks.map(links => {
             if (links.id <= 3) {
@@ -39,8 +39,9 @@ const Nav = () => {
                           : "inactive"
                       }
                     >
-                      <i className={links.icons} />
-                      <span>{links.name}</span>
+                      <i className={links.icons} >
+                        <span> {links.name}</span>
+                      </i>
                     </li>
                   </Link>
                 </div>
@@ -49,10 +50,9 @@ const Nav = () => {
               return (
                 <div key={links.id}>
                   <a href={links.to} target="blank" rel="noopener noreferrer">
-                    <li>
-                      <i className={links.icons} />
-                      <span>{links.name}</span>
-                    </li>
+                      <i className={links.icons} >
+                        <span className="nav-resume"> {links.name}</span>
+                      </i>
                   </a>
                 </div>
               );

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Contact from '../Contact/Contact';
 import "./Landing.css";
 
 class Landing extends Component {
@@ -29,7 +30,7 @@ class Landing extends Component {
           <p className="home-skills"> {resumeData.skills}</p>
         </div>
 
-        <ul className="social-links">
+        {/* <ul className="social-links">
             <span className="social-title">{resumeData.socialLinksTitle}</span>
           {resumeData.socialLinks.slice(0, 3).map(social => {
               
@@ -42,7 +43,8 @@ class Landing extends Component {
                 </li>
             );
           })}
-        </ul>
+        </ul> */}
+        <Contact />
       </div>
     );
   }

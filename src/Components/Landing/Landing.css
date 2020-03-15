@@ -17,18 +17,23 @@ a {
   flex-direction: row;
 }
 
+.home .social-links  {
+  opacity: 0;
+}
+
+/*
 .social-links {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* background-color: gray; */
+  background-color: gray; 
   margin: auto;
   height: 45%;
   width: 35%;
 }
 
-.social-title {
+ .social-title {
   font-size: 1rem;
   padding: 0 1rem;
 }
@@ -88,7 +93,7 @@ a {
   transform: scale(1.2);
   background-color: transparent;
   box-shadow: 1px 1px 25px yellow;
-}
+} */
 
 .headshot {
   border-radius: 50%;

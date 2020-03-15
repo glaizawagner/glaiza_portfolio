@@ -1,6 +1,7 @@
 const resumeData = {
     "name" : "Glaiza Wagner",
-    "logo" : "https://imgur.com/DR3oJJr.png",
+    "headshot" : "https://imgur.com/DR3oJJr.png",
+    "logo" : "https://imgur.com/5f1Kl3j.png",
     "role" : "Full-Stack Web Developer",
     "contactTitle": "Contact",
     "contactSign" : "fa fa-map-pin",

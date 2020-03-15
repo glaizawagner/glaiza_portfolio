@@ -1,15 +1,24 @@
-import React, { useEffect } from 'react';
+import React, { Component } from 'react';
+import resumeData from '../../resumeData'
+import './Contact.css';
 
-const Contact = () => {
-
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    })
-
-    return(
-        <section className="Contact">
-            'Contact'
-        </section>
-    )
+class Contact extends Component{
+    render(){
+        return(
+            <ul className="social-links social-landing">
+                <span className="social-title">{resumeData.socialLinksTitle}</span>
+                {resumeData.socialLinks.slice(0, 3).map(social => {
+                return (
+                            <li key={social.id}>
+                                <a href={social.url} target="blank" rel="noopener noreferrer">
+                                    <i className={social.className}/> 
+                                    <span className="social-title">{social.name}</span>
+                                </a>
+                            </li>
+                       
+                ) })}
+            </ul>
+        );
+    }
 }
 export default Contact;
