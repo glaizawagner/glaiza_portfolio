@@ -1,20 +1,18 @@
 .headshot {
-    width: 20%;
-    height: 20%;
-    opacity: 0.8;
+  width: 20%;
+  height: 20%;
+  opacity: 0.8;
 }
 
 a {
-    font-size: 2rem;
-    color: var(--color-dark);
-} 
+  font-size: 2rem;
+  color: var(--color-dark);
+}
 
 .home {
   height: 75vh;
-  width: 75vh;
-  margin: 4rem auto;
-  /* background-color: var(--color-medium) */
-
+  /* background-color: pink; */
+  margin: 2rem;
   display: flex;
   flex-direction: row;
 }
@@ -22,34 +20,119 @@ a {
 .social-links {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
   /* background-color: gray; */
   margin: auto;
-  height: 33%;
-  width: 15%;
+  height: 45%;
+  width: 35%;
 }
 
-.social-icons {
-  height: 5%;
-  width: 5%;
+.social-title {
+  font-size: 1rem;
+  padding: 0 1rem;
 }
 
-.social-icons:hover:before {
+.social-title:first-child {
+  background-color: yellow;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  font-weight: 900;
+}
+.social-links .social-title {
+  opacity: 0;
+} 
+
+.social-links:hover .social-title{
+  opacity: 1;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.social-links li a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.social-links * i{
+  padding: 1.5rem;
+  margin-right: 2rem;
+  height: 100%;
+  width: 100%;
+  box-shadow: 0 0 10px blue;
+  border: 1px solid blue;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+.social-links * i:hover:before {
   transform: scale(1.1);
-  box-shadow: 0 0 15px red;
+  box-shadow: 0 0 15px blue;
+  border-radius: 50%;
+  background-color: transparent;
+  box-shadow: 0;
 }
 
-.social-icons:hover {
+.social-links * i:hover {
+  margin: .75rem 0;
   border-style: none;
   border-radius: 50%;
-  text-transform: scaleY(2px);
-  background-color: red;
-  box-shadow: 1px 1px 25px red;
+  border: 1px solid yellow;
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  background-color: transparent;
+  box-shadow: 1px 1px 25px yellow;
 }
 
 .headshot {
   border-radius: 50%;
 }
+
+.about-skills {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  /* background-color: white; */
+}
+
+.about-skills .tech-icons {
+  padding: 0 1rem;
+  font-size: 5rem;
+}
+
+.heading-main {
+  height: 50vh;
+  margin-left: 0;
+  text-align: center;
+  background-color: purple;
+  text-transform: uppercase;
+}
+
+.heading-primary {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 900;
+  letter-spacing: .3rem;
+  backface-visibility: hidden; /*for animation not to be shaky*/
+
+  animation: moveInLeft 1s ease-out;
+
+  flex: 1 0 320;
+}
+
+.heading-secondary{
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+  animation: moveInRight 1s ease-out;
+}
+
 /*
     width = height = 70px
     border-width = 10px
@@ -65,7 +148,7 @@ a {
   top: 45%;
   left: 45%;
 } */
-  
+
 /* .bar{
   background: #d0f0dd;
   box-shadow: 0px 0px 0 #40ff22,
@@ -124,3 +207,4 @@ a {
   20% {height: 100px; top: 0; left: 0;}
   40% {height: 0; top: 0; left: 0;}
 }  */
+

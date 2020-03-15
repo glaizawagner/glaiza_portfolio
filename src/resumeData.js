@@ -1,8 +1,10 @@
 const resumeData = {
     "name" : "Glaiza Wagner",
+    "logo" : "https://imgur.com/DR3oJJr.png",
     "role" : "Full-Stack Web Developer",
     "contactTitle": "Contact",
     "contactSign" : "fa fa-map-pin",
+    "socialLinksTitle" : "Follow",
     "socialLinks" : 
     [
         {
@@ -30,8 +32,6 @@ const resumeData = {
             "className": "fa fa-envelope",
         }
     ],
-    "navResumeLink" : "https://drive.google.com/file/d/188nMXjIDNyqTr66sYmX4hhq61tdXuxrT/view?usp=sharing",
-    "navResumeIcon" : "fa fa-file",
     "navLinks" : 
     [
         {
@@ -165,6 +165,7 @@ const resumeData = {
                 
             }
     ],
+    "techName" : "Technologies",
     "techStack" : 
     [
         {
