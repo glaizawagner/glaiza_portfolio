@@ -92,7 +92,7 @@
   font-size: 2rem;
   
   background-image: linear-gradient(90deg, transparent 0%, transparent 50%, rgba(248, 207, 64, .8) 50%);
-  background-size: 230%;
+  background-size: 350%;
   transition: all .3s; 
 
   color:var(--color-secondary-main);
@@ -156,7 +156,7 @@
 
 .navContact li div:hover, .navContact li i:active  {
   color: var(--color-secondary-main);
-  transform: translateX(-8rem);
+  transform: translateX(-10rem);
   text-align: center; 
 }
 
