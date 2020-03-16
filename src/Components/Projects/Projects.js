@@ -40,13 +40,13 @@ class Projects extends Component {
                                           
                                           <div className="proj-btn">
                                                     <button className="btn btn-border">
-                                                      <a href={`${project.liveApp}`} target="_blank" rel="noopener noreferrer">Live</a>
+                                                      <a href={`${project.liveApp}`} target="_blank" rel="noopener noreferrer"><span className="btn-name">Live</span></a>
                                                     </button>
                                                     <button className="btn btn-border">
-                                                      <a href={`${project.clientRepo}`} target="_blank" rel="noopener noreferrer">Client</a>
+                                                      <a href={`${project.clientRepo}`} target="_blank" rel="noopener noreferrer"><span className="btn-name">Client</span></a>
                                                     </button>
                                                     <button className="btn btn-border">
-                                                      <a href={`${project.serverRepo}`} target="_blank" rel="noopener noreferrer">Server</a>
+                                                      <a href={`${project.serverRepo}`} target="_blank" rel="noopener noreferrer"><span className="btn-name">Server</span></a>
                                                     </button>
                                             </div>
                                         </div>

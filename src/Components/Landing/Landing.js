@@ -38,7 +38,7 @@ class Landing extends Component {
           <Link
             to='/projects'
           >
-          <button type="button" className="btn-proj">See projects &#62;&#62;</button>
+          <button type="button" className="btn btn-proj btn-border"><span className="btn-name">See projects &#62;&#62;</span></button>
           </Link>
         </div>
        

@@ -71,6 +71,7 @@
     margin-bottom: 1rem;
     padding-left: 8%;
 }
+
 /* for Next and Prev Arrow */
 .next, .prev {
     display: block;
@@ -119,12 +120,15 @@
     cursor: pointer;
     font-size: 1rem;
     font-weight: 400;
-    padding: 5px 2em;
-    letter-spacing: 0.05rem;
-    margin: 0 1rem;
+    padding: 1rem 3rem;
+    letter-spacing: 1px;
+    margin: 3rem 1rem;
     border-radius: 8px;
-    width: 8%;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
   }
+
   .btn-border::before, .btn-border::after {
     border: 0 solid transparent;
     border-radius: 15px 50px;
@@ -136,7 +140,6 @@
     height: 0;
     bottom: 0;
     right: 0;
-    
   }
   .btn-border::before {
     border-bottom-width: 4px;
@@ -150,7 +153,16 @@
   .btn-border:hover {
     text-transform: uppercase;
     border-radius: 15px 50px;
+    font-weight: 700;
   }
+
+  .btn-name:hover {
+    -moz-animation: blink normal 2s infinite ease-in-out; /* Firefox */
+    -webkit-animation: blink normal 2s infinite ease-in-out; /* Webkit */
+    -ms-animation: blink normal 2s infinite ease-in-out; /* IE */
+    animation: blink normal 2s infinite ease-in-out; /* Opera and prob css3 final iteration */
+  }
+
   .btn-border:hover::before, .btn-border:hover::after {
     width: 100%;
     height: 100%;

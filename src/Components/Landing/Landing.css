@@ -20,7 +20,7 @@
 
 .heading-primary--main {
   display: block;
-  font-size: 3.5rem;
+  font-size: 5rem;
   font-weight: 900;
   letter-spacing: .5rem;
   line-height: 1.7;
@@ -32,7 +32,7 @@
   -ms-animation: blink normal 10s infinite ease-in-out;
   animation: blink normal 10s infinite ease-in-out; */
   
-  animation: moveInRight 25s infinite ease-in-out;
+  animation: moveInRight 10s infinite ease-in-out;
 }
 
 .heading-primary--sub {
@@ -47,7 +47,6 @@
   -ms-animation: blink normal 2s infinite ease-in-out; /* IE */
   animation: blink normal 2s infinite ease-in-out; /* Opera and prob css3 final iteration */
 }
-
 
 
 .home .social-links  {
@@ -161,7 +160,7 @@
 
 .btn-proj {
   margin: 5rem 1rem 1rem 1rem;
-  /* background-color: red; */
+  background-color: red;
   padding: 1rem 2.5rem;
   border: none;
   border-radius: 10px;
