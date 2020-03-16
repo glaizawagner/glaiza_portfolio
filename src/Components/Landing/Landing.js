@@ -1,18 +1,22 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import Contact from '../Contact/Contact';
 import "./Landing.css";
 
 class Landing extends Component {
+
   render() {
     let resumeData = this.props.resumeData;
 
     return (
       <div className="home">
         <div className="heading-main">
+          <h1 class="heading-primary">
+            <span className="heading-primary--main">{resumeData.name}</span>
+            <span className="heading-primary--sub">{resumeData.role}</span>
+          </h1>
 
-          <h1 className="heading-primary">{resumeData.name}</h1>
-          <h2 className="heading-secondary">{resumeData.role}</h2>
-
+          <span className="tech-title">{resumeData.techTitle}</span>
           <ul className="about-skills">
             {resumeData.techStack.slice(0, 5).map(tech => {
               return (
@@ -29,22 +33,16 @@ class Landing extends Component {
           </ul>
           <p className="home-skills"> {resumeData.skills}</p>
         </div>
-
-        {/* <ul className="social-links">
-            <span className="social-title">{resumeData.socialLinksTitle}</span>
-          {resumeData.socialLinks.slice(0, 3).map(social => {
-              
-            return (
-                <li key={social.id}>
-                  <a href={social.url} target="blank" rel="noopener noreferrer">
-                    <i className={social.className}/> 
-                    <span className="social-title">{social.name}</span>
-                  </a>
-                </li>
-            );
-          })}
-        </ul> */}
         <Contact />
+        <div className="btn-proj-link">
+          <Link
+            to='/projects'
+          >
+          <button type="button" className="btn-proj">See projects &#62;&#62;</button>
+          </Link>
+        </div>
+       
+        
       </div>
     );
   }

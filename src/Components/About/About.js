@@ -5,17 +5,16 @@ class About extends Component {
   render() {
     let resumeData = this.props.resumeData;
 
-    console.log("resumeData about", resumeData.aboutDesc1);
     return (
-      <section className="About">
-        <div className="about">
+        <div className="About">
+          <h4 className="about-title">{resumeData.aboutTitle}</h4>
           <ul className="about-desc">
             {resumeData.about.map(about => {
-              return <li key={about.id}>{about.desc}</li>;
+              return <li key={about.id} className ="u-margin-bottom-small">{about.desc}</li>;
             })}
           </ul>
 
-          <h3 className="about-interest">{resumeData.interestTitle}</h3>
+          <h3 className="about-interest-title">{resumeData.interestTitle}</h3>
           <ul className="interest-desc">
             {resumeData.interests.map(interest => {
               return (
@@ -27,7 +26,6 @@ class About extends Component {
             })}
           </ul>
         </div>
-      </section>
     );
   }
 }

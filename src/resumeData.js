@@ -61,6 +61,7 @@ const resumeData = {
             "icons": "fa fa-file",
         }
     ],
+    "aboutTitle" : "About Me",
     "about" : 
     [
         {
@@ -166,7 +167,7 @@ const resumeData = {
                 
             }
     ],
-    "techName" : "Technologies",
+    "techTitle" : "Technology Used",
     "techStack" : 
     [
         {

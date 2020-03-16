@@ -17,13 +17,13 @@ class Projects extends Component {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 10000,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />
   }
       return (
         <div className="proj-container">
-            <h6 className="text-muted">PROJECTS</h6>
+            <h6 className="proj-header">PROJECTS</h6>
               <ul id="container">
                     <Slider {...settings}>
                       {resumeData.projectList.map(project => {
@@ -31,13 +31,12 @@ class Projects extends Component {
                             <div key={project.id} className = "proj-box">
                                     <li className="proj-content" key={project.id}>
                                         <div className="proj-image">
-                                          <img className="item2" alt={project.name} src={`${project.img}`} />
+                                          <img className="proj-images" alt={project.name} src={`${project.img}`} />
                                         </div>
                                         
-                                        
                                         <div className="proj-info">
-                                          <h5 className="item2">{project.name}</h5>
-                                          <span className="item2">{project.description}</span>
+                                          <h5 className="proj-title">{project.name}</h5>
+                                          <span className="proj-desc">{project.description}</span>
                                           
                                           <div className="proj-btn">
                                                     <button className="btn btn-border">

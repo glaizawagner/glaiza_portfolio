@@ -1,21 +1,54 @@
-.headshot {
-  width: 20%;
-  height: 20%;
-  opacity: 0.8;
-}
-
-a {
-  font-size: 2rem;
-  color: var(--color-dark);
-}
-
 .home {
-  height: 75vh;
-  /* background-color: pink; */
-  margin: 2rem;
-  display: flex;
-  flex-direction: row;
+  margin: 15% 8%;
+  padding: 1rem 1rem;
+  height: 70vh;
+  width: auto;
+  /* background: var(--font-dark); */
+  font-size: 1rem;
+  border-radius: 10px;
 }
+
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+
+  backface-visibility: hidden; /*for animation not to be shaky*/
+  margin-bottom: 1rem; /*white space*/
+  text-align: center;
+
+}
+
+.heading-primary--main {
+  display: block;
+  font-size: 3.5rem;
+  font-weight: 900;
+  letter-spacing: .5rem;
+  line-height: 1.7;
+
+  flex: 1 0 320;
+
+  /* -moz-animation: blink normal 10s infinite ease-in;
+  -webkit-animation: blink normal 10s infinite ease-in-out;
+  -ms-animation: blink normal 10s infinite ease-in-out;
+  animation: blink normal 10s infinite ease-in-out; */
+  
+  animation: moveInRight 25s infinite ease-in-out;
+}
+
+.heading-primary--sub {
+  display: block;
+  font-size: 1.5rem;
+  letter-spacing: .2rem;
+  font-weight: 600;
+  /* animation: moveInRight 1s ease-out; */
+
+  -moz-animation: blink normal 2s infinite ease-in-out; /* Firefox */
+  -webkit-animation: blink normal 2s infinite ease-in-out; /* Webkit */
+  -ms-animation: blink normal 2s infinite ease-in-out; /* IE */
+  animation: blink normal 2s infinite ease-in-out; /* Opera and prob css3 final iteration */
+}
+
+
 
 .home .social-links  {
   opacity: 0;
@@ -99,45 +132,41 @@ a {
   border-radius: 50%;
 }
 
-.about-skills {
-  margin-top: 3rem;
+.tech-title{
+  margin-top: 15rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: var(--font-light);
+  letter-spacing: 2px;
+}
+
+.about-skills, .tech-title{
+  
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
   /* background-color: white; */
 }
 
 .about-skills .tech-icons {
   padding: 0 1rem;
-  font-size: 5rem;
+  font-size: 3rem;
 }
 
-.heading-main {
-  height: 50vh;
-  margin-left: 0;
-  text-align: center;
-  background-color: purple;
-  text-transform: uppercase;
+.btn-proj-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
-.heading-primary {
-  display: block;
-  font-size: 1.4rem;
-  font-weight: 900;
-  letter-spacing: .3rem;
-  backface-visibility: hidden; /*for animation not to be shaky*/
-
-  animation: moveInLeft 1s ease-out;
-
-  flex: 1 0 320;
+.btn-proj {
+  margin: 5rem 1rem 1rem 1rem;
+  /* background-color: red; */
+  padding: 1rem 2.5rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
 }
-
-.heading-secondary{
-  display: block;
-  font-size: 1rem;
-  font-weight: 600;
-  animation: moveInRight 1s ease-out;
-}
-
 /*
     width = height = 70px
     border-width = 10px

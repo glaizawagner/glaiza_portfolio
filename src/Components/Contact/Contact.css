@@ -6,11 +6,7 @@
 
 .social-links li a{
     color: var(--color-primary-light);
-    -moz-animation: blink normal 10s infinite ease-in-out; /* Firefox */
-    -webkit-animation: blink normal 10s infinite ease-in-out; /* Webkit */
-    -ms-animation: blink normal 10s infinite ease-in-out; /* IE */
-    animation: blink normal 10s infinite ease-in-out; /* Opera and prob css3 final iteration */
-
+    font-size: 1.5rem;
 }
 
 .social-links {
@@ -22,10 +18,10 @@
 }
 
 .social-links * i:hover {
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: var(--color-primary-dark);
     border-radius: 50%;
-    box-shadow: 0 0 10px var(--color-primary-dark);
+    box-shadow: 0 0 20px var(--color-primary-dark);
 }
   
   /* 
