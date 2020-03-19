@@ -7,7 +7,7 @@ class Contact extends Component{
         return(
             <ul className="social-links social-landing">
                 <span className="social-title">{resumeData.socialLinksTitle}</span>
-                {resumeData.socialLinks.slice(0, 3).map(social => {
+                {resumeData.socialLinks.map(social => {
                 return (
                             <li key={social.id}>
                                 <a href={social.url} target="blank" rel="noopener noreferrer">

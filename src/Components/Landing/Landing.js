@@ -11,7 +11,7 @@ class Landing extends Component {
     return (
       <div className="home">
         <div className="heading-main">
-          <h1 class="heading-primary">
+          <h1 className="heading-primary">
             <span className="heading-primary--main">{resumeData.name}</span>
             <span className="heading-primary--sub">{resumeData.role}</span>
           </h1>

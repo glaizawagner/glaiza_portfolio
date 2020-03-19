@@ -108,6 +108,10 @@
   margin-left: 5rem;
 }
 
+#navMenu::after {
+  opacity: 0;
+}
+
 #toggleMenu input:checked~ul {
   transform: none;
 }
@@ -160,6 +164,7 @@
   text-align: center; 
 }
 
+
 /* .navContact li i:hover, .navContact li i:active {
   margin: 0;
   padding: 0;
@@ -193,8 +198,8 @@
     flex-direction: row;
     justify-content: flex-end;
 
-    padding: 0;
-    margin: 0;
+    padding: 20px;
+    margin: 0 0 0 0;
 
     transform-origin: none;
     transform: none;
@@ -204,7 +209,12 @@
     height: 5%;
   }
 
-  #navMenu li {
+  .nav-resume {
+    display: inline-block;
+    /* padding-top: 1.2rem;
+    padding-bottom: .9rem; */
+  }
+  /* #navMenu li, #navMenu * a{
     position: relative;
     display: flex;
     flex-direction: row;
@@ -215,20 +225,20 @@
     transition: .5s;
     z-index: 1;
     color: var(--font-light) !important;
-    /* background-color: yellowgreen; */
-  }
+    background-color: yellowgreen;
+  } */
 
   #navMenu li i {
     color: pink;
     padding: 0 2%;
   }
 
-  #navMenu li::before {
+  /* #navMenu li::before {
     content: '';
     position: absolute;
     top: 5px;
     left: 10px;
-    /* padding-bottom: .5rem; */
+    padding-bottom: .5rem;
     width: 75%;
     height: 75%;
     border-top: 2px solid blue;
@@ -246,14 +256,14 @@
     left: 0;
     width: 85%;
     height: 85%;
-    /* background-color: #262626; */
+    background-color: #262626;
     transform: scale(1, 2);
     opacity: 0;
     transition: .3s;
     z-index: -1;
-  }
+  } */
 
-  #navMenu li:hover {
+  /* #navMenu li:hover {
     color: #fff;
   }
 
@@ -265,23 +275,31 @@
   #navMenu li:hover::after {
     transform: scaleY(1);
     opacity: 1;
+  } */
+
+  /* .inactive {
+    background-color: transparent;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  } */
+
+  .active {
+    background-color: red;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  .inactive {
+    background-color: pink;
   }
 
-  /* #ul .inactive {
+  #navMenu .inactive {
     margin-bottom: 10px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    background-image: linear-gradient(to left,
-                                      transparent,
-                                      transparent 50%,
-                                      rgba(255, 192, 203, 0.678) 50%,
-                                      rgba(255, 192, 203, 0.678));
-    background-position: 100% 0;
-    background-size: 200% 100%;
-    transition: all .40s ease-in;
+    color:blue;
   }
 
-  #navMenu .inactive:hover {
+  /* #navMenu .inactive:hover {
     background-position: 0 0;
   } */
 

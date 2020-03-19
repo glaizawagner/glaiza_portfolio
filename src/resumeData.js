@@ -52,10 +52,15 @@ const resumeData = {
             "name" : "Projects",
             "to" : "/projects",
             "icons": "fa fa-folder",
-        }
-        ,
+        },
         {
             "id" : 4,
+            "name" : "Contacts",
+            "to" : "/contacts",
+            "icons": "fa fa-mobile",
+        },
+        {
+            "id" : 5,
             "name" : "Resume",
             "to" : "https://drive.google.com/file/d/188nMXjIDNyqTr66sYmX4hhq61tdXuxrT/view?usp=sharing",
             "icons": "fa fa-file",

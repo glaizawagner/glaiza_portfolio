@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import LandingPage from "./Components/Landing/Landing";
 import About from "./Components/About/About";
-// import Contact from './Components/Contact/Contact';
+import Contact from './Components/Contact/Contact';
 import Loading from "./Components/Loading/Loading";
-import Nav from "./Components/Nav/Nav";
+import NavLink from "./Components/Nav/Nav";
 import Projects from "./Components/Projects/Projects";
 import Footer from "./Components/Footer/Footer";
 import resumeData from "./resumeData";
@@ -27,7 +27,7 @@ function App() {
     return (
       <BrowserRouter>
         <div className="App">
-          <Nav />
+          <NavLink />
           <main className="container">
             <Switch>
               <Route
@@ -42,6 +42,10 @@ function App() {
               <Route
                 path={"/projects"}
                 render={() => <Projects resumeData={resumeData} />}
+              />
+               <Route
+                path={"/contacts"}
+                render={() => <Contact resumeData={resumeData} />}
               />
             </Switch>
           </main>

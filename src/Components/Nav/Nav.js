@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import IconStyle from "../IconStyle/IconStyle";
 import resumeData from "../../resumeData";
 
@@ -24,35 +24,32 @@ const Nav = () => {
         <img src={resumeData.logo} alt="logo" className="logo" />
         <ul id="navMenu">
           {resumeData.navLinks.map(links => {
-            if (links.id <= 3) {
+            if (links.id <= 4) {
               return (
                 <div key={links.id}>
-                  <Link
-                    to={links.to}
-                    onClick={toggleMenuFunction}
-                    className="menu-link"
-                  >
-                    <li
-                      className={
-                        !window.location.href.includes(`${links.name}`)
+                  <li>
+                    <NavLink
+                      exact
+                      to={links.to}
+                      onClick={toggleMenuFunction}
+                      className={`${links.to}
                           ? "active"
-                          : "inactive"
-                      }
+                          : "inactive"`}
                     >
-                      <i className={links.icons} >
+                      <i className={links.icons}>
                         <span> {links.name}</span>
                       </i>
-                    </li>
-                  </Link>
+                    </NavLink>
+                  </li>
                 </div>
               );
             } else {
               return (
                 <div key={links.id}>
                   <a href={links.to} target="blank" rel="noopener noreferrer">
-                      <i className={links.icons} >
-                        <span className="nav-resume"> {links.name}</span>
-                      </i>
+                    <i className={links.icons}>
+                      <span className="nav-resume"> {links.name}</span>
+                    </i>
                   </a>
                 </div>
               );
