@@ -288,10 +288,14 @@
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
   }
+
   .inactive {
     background-color: pink;
   }
 
+  .logo-link {
+    background-color: transparent;
+  } 
   #navMenu .inactive {
     margin-bottom: 10px;
     border-top-left-radius: 10px;
@@ -303,12 +307,13 @@
     background-position: 0 0;
   } */
 
-  .logo {
+.logo {
     display: block;
     margin: auto;
-    margin-left: 1rem;
-    width: 5%;
-    height: 5%;
+    margin: 1rem;
+    width: 20%;
+    height: 50%;
+    background-color: transparent;
   }
 
   .navContact {

@@ -21,7 +21,9 @@ const Nav = () => {
           onChange={toggleMenuFunction}
         />
         {IconStyle({ style: `${toggleMenu ? "close" : "hamburger"}` })}
-        <img src={resumeData.logo} alt="logo" className="logo" />
+        <NavLink exact to="/" className="logo-link">
+          <img src={resumeData.logo} alt="logo" className="logo"/>
+        </NavLink>
         <ul id="navMenu">
           {resumeData.navLinks.map(links => {
             if (links.id <= 4) {
