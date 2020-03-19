@@ -43,10 +43,6 @@ function App() {
                 path={"/projects"}
                 render={() => <Projects resumeData={resumeData} />}
               />
-               <Route
-                path={"/contacts"}
-                render={() => <Contact resumeData={resumeData} />}
-              />
             </Switch>
           </main>
         </div>

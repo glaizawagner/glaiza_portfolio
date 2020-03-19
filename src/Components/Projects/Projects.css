@@ -77,18 +77,22 @@
     display: block;
     position: absolute;
     font-size: 4rem;
-    height: 2rem;
-    width: 2rem;
+    height: 12%;
+    width: 4%;
     z-index: 1000;
     top:45%;
+    padding: 1rem;
+    background-color: lightgray;
+
 }
 
 .next {
-    right: -20px;
+    right: 0;
 }
 
 .prev {
-    left: -25px;
+    left: 0;
+    
     /* z-index: -3; */
 }
 

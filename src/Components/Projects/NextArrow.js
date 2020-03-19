@@ -8,12 +8,8 @@ class NextArrow extends Component {
         onClick: PropTypes.func
     };
   
-    // constructor(props) {
-    //     super(props);
-    // }
-  
     render() {
-      return  <span className="next" onClick={this.props.onClick}> {IconStyle({style: 'right' })} </span> 
+      return  <div className="next" onClick={this.props.onClick}> {IconStyle({style: 'right' })} </div> 
     }
 }
 
