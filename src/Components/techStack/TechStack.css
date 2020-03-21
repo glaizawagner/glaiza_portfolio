@@ -1,0 +1,8 @@
+.techStack-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    padding: 1rem 1rem;
+    font-size: 3rem;
+}

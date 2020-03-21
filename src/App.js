@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import LandingPage from "./Components/Landing/Landing";
 import About from "./Components/About/About";
-import Contact from './Components/Contact/Contact';
+// import Contact from './Components/Contact/Contact';
 import Loading from "./Components/Loading/Loading";
 import NavLink from "./Components/Nav/Nav";
 import Projects from "./Components/Projects/Projects";

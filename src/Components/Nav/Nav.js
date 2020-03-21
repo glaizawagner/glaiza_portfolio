@@ -26,7 +26,7 @@ const Nav = () => {
         </NavLink>
         <ul id="navMenu">
           {resumeData.navLinks.map(links => {
-            if (links.id <= 4) {
+            if (links.id <= 3) {
               return (
                 <div key={links.id}>
                   <li>

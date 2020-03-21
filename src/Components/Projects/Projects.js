@@ -3,7 +3,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import NextArrow  from './NextArrow';
-import PrevArrow from './PrevArrow'
+import PrevArrow from './PrevArrow';
+import TechStack from '../techStack/TechStack';
 import './Projects.css';
 
 class Projects extends Component {
@@ -16,8 +17,8 @@ class Projects extends Component {
     arrows:true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 10000,
+    // autoplay: true,
+    // autoplaySpeed: 10000,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />
   }
@@ -31,13 +32,13 @@ class Projects extends Component {
                             <div key={project.id} className = "proj-box">
                                     <li className="proj-content" key={project.id}>
                                         <div className="proj-image">
-                                          <img className="proj-images" alt={project.name} src={`${project.img}`} />
+                                          <img className = "proj-images" alt={project.name} src={`${project.img}`} />
                                         </div>
                                         
                                         <div className="proj-info">
                                           <h5 className="proj-title">{project.name}</h5>
                                           <span className="proj-desc">{project.description}</span>
-                                          
+                                          <TechStack />
                                           <div className="proj-btn">
                                                     <button className="btn btn-border">
                                                       <a href={`${project.liveApp}`} target="_blank" rel="noopener noreferrer"><span className="btn-name">Live</span></a>
