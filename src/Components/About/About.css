@@ -1,7 +1,7 @@
 .About {
-    margin: 6% 8%;
+    margin: 0 5%;
     padding: 1rem 1rem;
-    height: 80vh;
+    height: 72vh;
     width: auto;
     background: var(--font-medium);
     font-size: 1rem;
@@ -9,8 +9,8 @@
 }
 
 .about-title {
-    font-size: 3rem;
-    margin: 1.3rem 1rem;
+    font-size: 2rem;
+    margin: 5px 5px;
     text-transform: uppercase;
     font-weight: 900;
     background: linear-gradient(to right, rgba(58, 83, 109, 0.3), rgba(255,255,255, .8));
@@ -24,14 +24,14 @@
 
 .about-desc {
     text-indent: 5%;
-    margin-top: 1rem;
+    margin-top: 10px;
 }
 
 .about-desc, .interest-desc{
-    font-size: 1.5rem; 
+    font-size: 1.3rem; 
     text-align: justify;
     text-justify: inter-word;
-    padding: 0 8%;
+    padding: 0 3%;
 }
 
 .about-desc, .interest-desc li {

@@ -1,14 +1,23 @@
 #toggleMenu {
   display: block;
   position: relative;
-  z-index: 1;
+  z-index: 2000;
   -webkit-user-select: none;
   user-select: none;
   width: 100%;
 
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+
+}
+
+
+#toggleMenu > .logo-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-self: center;
+  padding: 1rem;
 }
 
 #toggleMenu a {
@@ -20,13 +29,12 @@
 #toggleMenu input {
   display: inline-block;
   position: absolute;
-  top: 2.5rem;
+  top: 2rem;
   left: 3rem;
   cursor: pointer;
   opacity: 0;
   z-index: 2;
   -webkit-touch-callout: none;
-  font-size: 5rem;
   padding: 10px;
 }
 
@@ -40,7 +48,7 @@
   position: relative;
   font-size: 2rem;
   z-index: 1;
-  top: 2.5rem;
+  top: 1.8rem;
   left: 3rem;
   color: var(--color-dark);
 }
@@ -50,7 +58,7 @@
   width: 50%;
   height: 100vh;
   overflow: hidden;
-  padding: 8rem 2rem 0 1rem;
+  padding: 8rem 0 0 0;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   transform-origin: 0% 0%;
@@ -70,8 +78,8 @@
 }
 
 #navMenu li, #navMenu a i {
-  padding: 1rem 0;
-  color: var(--font-light);  
+  padding: 0;
+  color: var(--font-medium);  
 }
 
 #navMenu a i{
@@ -117,11 +125,13 @@
 }
 
 .logo {
-  height: 8%;
-  width: 8%;
+  height: 10%;
+  width: 10%;
+  padding: 2px;
   border-radius: 50%;
   margin-right: 5%;
-  margin-top: 1.2rem;
+  
+  /* background-color: var(--font-dark); */
 }
 
 .navContact {

@@ -3,6 +3,15 @@
     flex-direction: row;
     justify-content: center;
     align-content: center;
-    padding: 1rem 1rem;
-    font-size: 3rem;
+    
+    
+}
+
+.techStack-icons {
+    font-size: 1.3rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--color-primary-medium);
+    background-color: black;
+    margin: 3px 8px;
+    padding: 5px;
 }

@@ -11,7 +11,7 @@ class TechStack extends Component {
           return (
               <i
                 key={tech.id}
-                className={`devicon-${tech.skillName.toLowerCase()} colored large`}
+                className={`devicon-${tech.skillName.toLowerCase()} colored large techStack-icons`}
               />
             
           );

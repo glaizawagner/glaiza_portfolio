@@ -1,5 +1,5 @@
 .home {
-  margin: 15% 8%;
+  margin: 25% 8%;
   padding: 1rem 1rem;
   height: 70vh;
   width: auto;
@@ -20,7 +20,7 @@
 
 .heading-primary--main {
   display: block;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 900;
   letter-spacing: .5rem;
   line-height: 1.7;
@@ -132,8 +132,8 @@
 }
 
 .tech-title{
-  margin-top: 15rem;
-  margin-bottom: 1rem;
+  margin-top: 10rem;
+  margin-bottom: 3rem;
   font-size: 1.5rem;
   color: var(--font-light);
   letter-spacing: 2px;
@@ -148,23 +148,34 @@
 }
 
 .about-skills .tech-icons {
-  padding: 0 1rem;
+  /* padding: 0 1rem; */
   font-size: 3rem;
 }
 
+.tech-icons {
+  border-radius: 10px;
+  box-shadow: 0 0 10px var(--color-primary-medium);
+  background-color: black;
+  margin: 0 8px;
+  padding: 8px;
+}
 .btn-proj-link {
+  margin-top: 4rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
 .btn-proj {
+  font-size: 1.3rem;
+  font-weight: 700;
   margin: 5rem 1rem 1rem 1rem;
   background-color: red;
   padding: 1rem 2.5rem;
   border: none;
   border-radius: 10px;
   cursor: pointer;
+  text-transform: uppercase;
 }
 /*
     width = height = 70px
