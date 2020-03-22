@@ -225,6 +225,16 @@ const resumeData = {
             "skillName":"sass-original",
             "symbol" : " | "
           },
+    ],
+    "steps" :
+    [
+        'Hello 👋', 1000,
+        `I am GLAIZA WAGNER 👩‍💻`, 5000,
+        'You can 📧', 2000,
+        'Connect 👥', 2000,
+        'or',100,
+        'Follow 👣 me', 2000,
+        'Links 👇', 8000
     ]
 }
 export default resumeData;

@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import Contact from '../Contact/Contact';
+import ParticlesContainer from '../Particles/Particle';
+import Typical from 'react-typical';
 import "./Landing.css";
 
 class Landing extends Component {
@@ -10,10 +12,12 @@ class Landing extends Component {
 
     return (
       <div className="home">
+        <ParticlesContainer />
         <div className="heading-main">
           <h1 className="heading-primary">
-            <span className="heading-primary--main">{resumeData.name}</span>
+            <Typical wrapper="span" steps={resumeData.steps} loop={Infinity}  className="heading-primary-main"/>
             <span className="heading-primary--sub">{resumeData.role}</span>
+            
           </h1>
 
           <span className="tech-title">{resumeData.techTitle}</span>
@@ -41,8 +45,6 @@ class Landing extends Component {
           <button type="button" className="btn btn-proj btn-border"><span className="btn-name">view projects &#62;&#62;</span></button>
           </Link>
         </div>
-       
-        
       </div>
     );
   }

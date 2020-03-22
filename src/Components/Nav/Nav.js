@@ -29,7 +29,7 @@ const Nav = () => {
             if (links.id <= 3) {
               return (
                 <div key={links.id}>
-                  <li>
+                  <li className="navMenuLi">
                     <NavLink
                       exact
                       to={links.to}

@@ -5,7 +5,7 @@
     border: 4px solid var(--font-medium);
     border-radius: 10px; 
     background-color: var(--font-medium); 
-    height: 73vh;
+    height: 72vh;
 }
 
 .proj-box {
@@ -129,10 +129,13 @@
     color: var(--font-dark);
   }
 
-  .btn a:hover {
-    color: var(--font-light);
+  .btn-name {
+    -moz-animation: blink normal 5s infinite ease-in-out; /* Firefox */
+    -webkit-animation: blink normal 5s infinite ease-in-out; /* Webkit */
+    -ms-animation: blink normal 5s infinite ease-in-out; /* IE */
+    animation: blink normal 5s infinite ease-in-out; /* Opera and prob css3 final iteration */
   }
-
+  
   .proj-btn > .btn {
     font-size: 1.5rem;
     font-weight: 400;
@@ -153,6 +156,10 @@
     margin: 6px auto;
     border-radius: 8px;
     text-align: center;
+  }
+
+  .btn a:hover {
+    color: var(--font-light);
   }
 
   .btn-border::before, .btn-border::after {

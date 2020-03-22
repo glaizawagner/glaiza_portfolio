@@ -8,6 +8,7 @@ import NavLink from "./Components/Nav/Nav";
 import Projects from "./Components/Projects/Projects";
 import Footer from "./Components/Footer/Footer";
 import resumeData from "./resumeData";
+import ParticlesContainer from './Components/Particles/Particle';
 
 import "./App.css";
 
@@ -25,6 +26,7 @@ function App() {
     return <Loading />;
   } else {
     return (
+      
       <BrowserRouter>
         <div className="App">
           <NavLink />
