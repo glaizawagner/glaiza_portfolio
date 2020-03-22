@@ -1,3 +1,12 @@
+.particles {
+  margin: -15rem -5rem 0 -5rem;
+  padding: 0 !important;
+  width: 100wv;
+  height: 100vh;
+  position: absolute;
+  z-index: 200;
+}
+
 .home {
   margin: 25% 8%;
   padding: 1rem 1rem;
@@ -5,6 +14,7 @@
   width: auto;
   font-size: 1rem;
   border-radius: 10px;
+  position: relative;
 }
 
 .heading-primary {
@@ -19,11 +29,7 @@
   padding: 10px;
   letter-spacing: 1px;
   text-transform: none;
-  color: var(--color-primary-medium);
-}
-
-.heading-primary-main::first-letter{
-  color: red
+  color: var(--font-dark);
 }
 
 .heading-primary--sub {
