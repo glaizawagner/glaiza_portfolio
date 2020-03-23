@@ -83,6 +83,7 @@
 
 #navMenu li i span, .nav-resume {
   color: var(--font-light);
+  
 }
 
 #navMenu li i, #navMenu a i {
@@ -146,56 +147,54 @@
     display: none;
   }
 
+  #toggleMenu > .logo-link {
+    justify-content: flex-start;
+    margin-left: 2rem;
+    padding: 5px;
+  }
+
   #navMenu {
     position: relative;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-
-    padding: 20px;
+    padding: 1rem 0 0 0;
     margin: 0 0 0 0;
 
     transform-origin: none;
     transform: none;
     transition: none;
     background: none;
-    width: 75%;
-    height: 5%;
+    width: 50%;
+    height: 3%;
   }
 
   .nav-resume {
     display: inline-block;
-    /* padding-top: 1.2rem;
-    padding-bottom: .9rem; */
   }
-  /* #navMenu li, #navMenu * a{
-    position: relative;
-    display: flex;
-    flex-direction: row;
+
+  #navMenu li i, #navMenu a i {
     width: 100%;
-    margin: 8px 1rem;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+  }
+
+  #navMenu li, #navMenu * a{
+    position: relative;
     font-size: 1.3rem;
     font-weight: 600;
     transition: .5s;
     z-index: 1;
-    color: var(--font-light) !important;
-    background-color: yellowgreen;
-  } */
-
-  #navMenu li i {
-    color: pink;
-    padding: 0 2%;
   }
 
-  /* #navMenu li::before {
+  #navMenu li::before {
     content: '';
     position: absolute;
-    top: 5px;
-    left: 10px;
-    padding-bottom: .5rem;
+    top: 6px;
+    left: 2rem;
     width: 75%;
     height: 75%;
-    border-top: 2px solid blue;
+    border-top: 2px solid var(--color-primary-dark);
     border-bottom: 4px solid var(--color-dark);
     transform: scale(1, 2);
     opacity: 0;
@@ -206,20 +205,16 @@
   #navMenu li::after {
     content: '';
     position: absolute;
-    top: 2px;
+    top: 0;
     left: 0;
-    width: 85%;
-    height: 85%;
-    background-color: #262626;
+    width: 75%;
+    height: 75%;
     transform: scale(1, 2);
     opacity: 0;
     transition: .3s;
     z-index: -1;
-  } */
-
-  /* #navMenu li:hover {
-    color: #fff;
-  }
+    
+  } 
 
   #navMenu li:hover::before {
     transform: scaleY(1);
@@ -228,46 +223,49 @@
 
   #navMenu li:hover::after {
     transform: scaleY(1);
-    opacity: 1;
-  } */
+    opacity: .5;
+  } 
 
-  /* .inactive {
-    background-color: transparent;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-  } */
-
-  .active {
-    background-color: red;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+  #navMenu li i span:hover {
+    color: var(--color-secondary-main);
+    text-transform: uppercase;
   }
 
-  .inactive {
-    background-color: pink;
+  #navMenu a i:hover {
+    color: var(--font-light);
+  }
+
+  #navMenu * .nav-resume:hover {
+    color: var(--color-dark);
+    text-transform: uppercase;
+    text-underline-position: below;
+    letter-spacing: 1px;
+    font-size: 1.7rem;
+    font-weight: 700;
+    text-decoration: line-through;
+  }
+
+  #navMenu * .nav-resume {
+    padding-left: 1rem;
+  }
+  
+  .active {
+    background-color: rgba(112, 193, 179, .5);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: .4rem 0;
   }
 
   .logo-link {
     background-color: transparent;
   } 
-  #navMenu .inactive {
-    margin-bottom: 10px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    color:blue;
-  }
-
-  /* #navMenu .inactive:hover {
-    background-position: 0 0;
-  } */
 
 .logo {
-    display: block;
-    margin: auto;
-    margin: 1rem;
-    width: 20%;
-    height: 50%;
-    background-color: transparent;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 8%;
+    height: 8%;
   }
 
   .navContact {

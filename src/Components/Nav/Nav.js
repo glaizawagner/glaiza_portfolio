@@ -22,7 +22,7 @@ const Nav = () => {
         />
         {IconStyle({ style: `${toggleMenu ? "close" : "hamburger"}` })}
         <NavLink exact to="/" className="logo-link">
-          <img src={resumeData.logo} alt="logo" className="logo"/>
+          <img src={resumeData.logo} alt="logo" className="logo" />
         </NavLink>
         <ul id="navMenu">
           {resumeData.navLinks.map(links => {
