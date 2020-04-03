@@ -45,9 +45,10 @@ function App() {
                 render={() => <Projects resumeData={resumeData} />}
               />
             </Switch>
+            <Footer />
           </main>
         </div>
-        <Footer />
+        
       </BrowserRouter>
     );
   }
