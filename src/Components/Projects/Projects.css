@@ -213,10 +213,51 @@
             transition-delay: 0s, 0.25s, 0s;
   }
 
-.project-temp {
-  background-color: yellow;
-  color: red;
-  height: 20px;
-  width: 20px;
-  z-index: 99 !important;
-}
+  .proj-container > .selection-container {
+    display: inline-flex;
+    justify-content: center;
+    align-content: flex-start;
+
+    width: 33%;
+    margin: auto;
+  }
+
+  .selection-container > button {
+    font-size: 2rem;
+    font-weight: 400;
+    padding: 10px 0 ;
+    border: none;
+    outline:none;
+    cursor: pointer;
+    background-color: transparent;
+
+    position: relative;
+  }
+
+  .selection-container > button::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+
+  .selection-container > button:hover::before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+
+
+  .selection-container button:active, .selection-container button:focus {
+    height: 4rem;
+    box-shadow: 0 5px 0 0 black;
+  }
+

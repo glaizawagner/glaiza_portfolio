@@ -5,7 +5,6 @@ import Slider from "react-slick";
 import NextArrow from "./NextArrow";
 import PrevArrow from "./PrevArrow";
 import TechStack from "../TechStack/TechStack";
-// import Selection from '../Projects/ProjectSelection';
 import "./Projects.css";
 
 class Projects extends Component {
@@ -18,7 +17,6 @@ class Projects extends Component {
   };
 
   renderProjects() {
-    //console.log('proj', this.props.resumeData.projectList[this.state.selected].projects)
     return this.props.resumeData.projectList[this.state.selected].projects.map(
       project => {
         return (
@@ -74,10 +72,17 @@ class Projects extends Component {
   }
 
   renderSelection() {
+
     return this.props.resumeData.projectList.map(proj => (
-      <button key={proj.pid} value={proj.pid} onClick={this.handleSelection}>
-        {proj.title}
-      </button>
+      <div key={proj.pid} className="selection-container">
+        <button
+          key={proj.pid}
+          value={proj.pid}
+          onClick={this.handleSelection}
+        >
+          {proj.title}
+        </button>
+      </div>
     ));
   }
 
