@@ -255,8 +255,7 @@
     transform: scaleX(1);
   }
 
-
-  .selection-container button:active, .selection-container button:focus {
+  .selection-container button:active , .selection-container button:focus {
     height: 4rem;
     box-shadow: 0 5px 0 0 black;
   }

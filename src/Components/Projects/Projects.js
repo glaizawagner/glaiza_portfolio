@@ -9,11 +9,12 @@ import "./Projects.css";
 
 class Projects extends Component {
   state = {
-    selected: 0
+    selected: 0,
+    clicked: false
   };
 
   handleSelection = e => {
-    this.setState({ selected: parseInt(e.target.value) });
+    this.setState({ selected: parseInt(e.target.value), clicked: true });
   };
 
   renderProjects() {
@@ -72,14 +73,14 @@ class Projects extends Component {
   }
 
   renderSelection() {
-
-    return this.props.resumeData.projectList.map(proj => (
+    return this.props.resumeData.projectList.map( (proj, idx) => (
       <div key={proj.pid} className="selection-container">
         <button
           key={proj.pid}
           value={proj.pid}
           onClick={this.handleSelection}
-        >
+          style ={!this.state.clicked && proj.pid === 0 ? {boxShadow: "0 5px 0 0 black"} : { color: "black"}}
+        > 
           {proj.title}
         </button>
       </div>
