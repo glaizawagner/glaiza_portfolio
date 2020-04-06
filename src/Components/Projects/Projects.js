@@ -73,13 +73,15 @@ class Projects extends Component {
   }
 
   renderSelection() {
+    console.log('clicked', this.state.clicked)
     return this.props.resumeData.projectList.map( (proj, idx) => (
       <div key={proj.pid} className="selection-container">
         <button
           key={proj.pid}
           value={proj.pid}
           onClick={this.handleSelection}
-          style ={!this.state.clicked && proj.pid === 0 ? {boxShadow: "0 5px 0 0 black"} : { color: "black"}}
+          // style ={!this.state.clicked && proj.pid === 0 ? {boxShadow: "0 5px 0 0 black"} : { color: "black"}}
+          className ={!this.state.clicked && proj.pid === 0 ? "btn-clicked" : "btn-selected"}
         > 
           {proj.title}
         </button>

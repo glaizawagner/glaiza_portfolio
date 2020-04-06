@@ -111,13 +111,13 @@ const resumeData = {
         {
             "pid" : 0,
             "name" : "recent",
-            "title" : "Bootcamp Projects",
+            "title" : "Bootcamp",
             "projects" :
              [
                 {
                     id: 1, 
                     name: "Live List", 
-                    img: "https://imgur.com/yfIWPQ7.jpg" ,
+                    img: "https://imgur.com/6RvlkKV.png" ,
                     description: "An application that will let you live like the locals. It helps users find customizable lists of other users that already tried a certain spot in the area.",
                     liveApp: "https://www.live-list.org/",
                     clientRepo: "https://github.com/thinkful-ei-heron/SocialPlaylist-Client",
@@ -126,7 +126,7 @@ const resumeData = {
                 {
                     id: 2, 
                     name: "Bux Influx", 
-                    img:  "https://imgur.com/hwb41Ae.png" ,
+                    img:  "https://imgur.com/ISqrXC9.png" ,
                     description: "Bux Influx is an app that will help users monitor their monthly income and expenses. It can determine if you have exceeded your alloted budget.",
                     liveApp: "https://glaiza-buxinflux-app.now.sh",
                     clientRepo: "https://github.com/glaizawagner/bux-influx-client",
@@ -136,7 +136,7 @@ const resumeData = {
                 {
                     id: 3, 
                     name: "SpacedRep", 
-                    img: "https://imgur.com/6a4fwa4.png" ,
+                    img: "https://imgur.com/0m3fQqr.png" ,
                     description: "This spaced-repetition project is designed to help users learn twenty LATIN words. It can track users' total scores, correct and incorrect count. Finally, it gives feedback in every answer.",
                     liveApp: "https://gz-spaced-repetition-app.now.sh/",
                     clientRepo: "https://github.com/thinkful-ei-heron/spaced-repetition_Zac-Glaiza_client",
@@ -146,7 +146,7 @@ const resumeData = {
                 {
                     id: 4, 
                     name: "Petful", 
-                    img: "https://imgur.com/gyicmiA.png" ,
+                    img: "https://imgur.com/kP8Q0mc.png" ,
                     description: "It is a FIFO Adoption agency that works in a first come, first served basis not only for animals but for people who are interested to adopt.",
                     liveApp: "https://petful-client-glaiza-wesley.now.sh/",
                     clientRepo: "https://github.com/glaizawagner/petful-client",
@@ -156,7 +156,7 @@ const resumeData = {
                 {
                     id: 5, 
                     name: "Bookmarks", 
-                    img: "https://imgur.com/xYRl1YI.png",
+                    img: "https://imgur.com/wOqAL1u.png",
                     description: "This application allows a user to save their favorite bookmarks. It will also let a user filter their lists by minimum rating. Using this app will help a user track their saved bookmarks.",
                     liveApp: "https://thinkful-ei-heron.github.io/glaiza-bookmark-app/",
                     clientRepo: "https://github.com/thinkful-ei-heron/glaiza-bookmark-app",
@@ -165,7 +165,7 @@ const resumeData = {
                 {
                     id: 6, 
                     name: "Quiz App", 
-                    img: "https://imgur.com/dBHjK9p.png",
+                    img: "https://imgur.com/lv4VVqI.png",
                     description: "A 10 question quiz that will test your knowledge in HTML, CSS and Javascript. When a user clicks submit, a random image and a message will show that the user's answer is correct or incorrect.",
                     liveApp: "https://glaizawagner.github.io/Jonny-Glaiza-QuizGame/",
                     clientRepo: "https://github.com/glaizawagner/Jonny-Glaiza-QuizGame",
@@ -176,7 +176,7 @@ const resumeData = {
         {
             "pid" : 1,
             "name" : "personal",
-            "title" : "Personal Projects",
+            "title" : "Personal",
             "projects" :
             [
                 {
@@ -203,7 +203,7 @@ const resumeData = {
         {
             "pid" : 2,
             "name" : "fun",
-            "title" : "Fun Projects",
+            "title" : "Fun",
             "projects" :
              [
                 {
